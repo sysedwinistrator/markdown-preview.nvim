@@ -1,4 +1,4 @@
-let s:mkdp_root_dir = expand('<sfile>:h:h:h')
+let s:mkdp_root_dir = get(g:, 'mkdp_root_dir', expand('<sfile>:h:h:h'))
 let s:mkdp_opts = {}
 let s:is_vim = !has('nvim')
 let s:mkdp_channel_id = s:is_vim ? v:null : -1

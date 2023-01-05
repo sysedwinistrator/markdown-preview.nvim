@@ -1,4 +1,4 @@
-let s:mkdp_root_dir = expand('<sfile>:h:h:h')
+let s:mkdp_root_dir = get(g:, 'mkdp_root_dir', expand('<sfile>:h:h:h'))
 let s:pre_build = s:mkdp_root_dir . '/app/bin/markdown-preview-'
 let s:package_file = s:mkdp_root_dir . '/package.json'
 
